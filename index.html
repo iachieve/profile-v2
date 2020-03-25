@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🙃 Mohamed | Software Engineer</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:700,300,300i" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="css/img/favicon.ico">
 </head>
 
 <body class="container">
@@ -16,9 +18,9 @@
   <header class="header">
     <img src="css/img/sec-1.jpg" alt="" class="header__img">
     <div class='header__welcome'>
-      <h2>Hi, my name is</h2>
-      <h1 class="header__msg">Mohamed Abdelhalim.</h1>
-      <h2>and I'm an awesome</h2>
+      <h2 class="header__secondary">Hi, my name is</h2>
+      <h1 class="header__name">Mohamed Abdelhalim.</h1>
+      <h2 class="header__secondary">and I'm an awesome</h2>
       <div class="header__software-engineer">
         <ul>
           <li>s</li>
@@ -40,46 +42,81 @@
           <li>r</li>
         </ul>
       </div>
-
+      <a href="#" class="btn btn--contact">contact me</a>
     </div>
   </header>
   <section class="background">
     <div class="background__content">
+      <h1 class="background__title">My career background</h1>
+      <p data-aos="fade-down-right">I have a Bachelor's degree in
+        Accounting with over six years of experience as a Software Engineer. In the early
+        stages of my career in the accounting field, I worked on ERP systems and used excel sheets extensively. At the
+        time, the business required complex, customized features and reports that were not available.
+        I <span class="strong"> took the initiative</span>
 
-    </div>
-    <h1>My career background and skills:</h1>
-    <p>I have a Bachelor's degree in Accounting with over six years of experience as a Software Engineer. In the early
-      stages of my career in the accounting field, I worked on ERP systems and used excel sheets extensively. At the
-      time, the business required complex, customized features and reports that were not available. I took the
-      initiative and was self-taught on how to program in C sharp and SQL to solve and streamline processes. Ever
-      since writing my first programming code to manipulate the output data, I have been committed to the idea of
-      using software to solve practical everyday problems</p>
-    <p>
-      I'm a software engineer who can prioritize, triage, and manage all of the various milestones of the multiple
-      projects on my plate at any given time.
-    </p>
-    <p>
-      Software engineering is a never-ending puzzle that I am passionately engaged in solving. I believe in the
-      power of programming to transform, improve, and streamline the process in the lives of people around the
-      world.
-    </p>
-  </section>
-  <section class="technologies">
-    <div class="technologies__content">
-      <h1>
-        Here's few technologies I prefer to work with:
-      </h1>
-      <ul>
-        <li>Ruby, Rails, C#</li>
-        <li>Node.js, Express</li>
-        <li>HTML, CSS, Bootstrap</li>
-        <li>React, Redux, GraphQL</li>
-        <li>JavaScript, JQuery</li>
-        <li>Postgres, SQL, Mongo, Firebase</li>
-      </ul>
+        and was <span class="strong">self-taught</span>
+
+        on how to program in <span class="strong">C sharp and SQL</span> to solve and streamline processes. Ever
+        since writing my first programming code to manipulate the output data, I have been committed to the idea of
+        using software to solve practical everyday problems</p>
+      <p data-aos="fade-down-left">
+        <span class="strong">I'm a software engineer who can prioritize, triage, and manage all of the various
+          milestones of the multiple
+          projects on my plate at any given time.</span>
+      </p>
+      <p data-aos="fade-down-right">
+        Software engineering is a never-ending puzzle that I am <span class="strong">passionately</span> engaged in
+        solving. I
+        believe in the
+        power of programming to transform, improve, and streamline the process in the lives of people around the
+        world.
+      </p>
     </div>
 
   </section>
+
+
+<section class="timeline">
+  <div class="timeline__content">
+    <ul>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i>2019 - 2020</h3>
+          <p>Ruby, Ruby on Rails, Node.js, Express, HTML, CSS, Bootstrap, SASS, React, Redux, 
+            GraphQL, JavaScript, JQuery, Postgres, SQL, Mongo, Firebase</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i>2014 - 2016</h3>
+          <p>
+            C#, ASP.NET, ASP.NET MVC, JavaScript, JQuery, SQL, Windows Services, IIS
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i>2010 - 2015</h3>
+          <p>
+            C#, ASP.NET, ASP.NET MVC, JavaScript, JQuery, SQL, Windows Services, IIS,
+            Crystal Reports, Telerik RAD Controls, DevExpress UI Controls
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i>2006-2009</h3>
+          <p>
+            VB6, VB.NET, SQL, Microsoft Office
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
 
   <section class="projects">
     <div class="projects__content">
@@ -159,6 +196,11 @@
       instagram
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

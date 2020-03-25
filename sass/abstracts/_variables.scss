@@ -1,26 +1,35 @@
-// COLOR VARIABLES
+// $col-one: #034f84;
+// $col-two: #92a8d1;
+// $col-three: #f7cac9;
+// $col-four: #f7786b;
+// $col-digital: #64FFDA;
 
-//  HEX: # HEX: #
+// $color-grey-light-1: #f9f7f6;
+// $color-grey-light-2: #aaa;
 
+// $color-grey-dark-1: #54483A;
+// $color-grey-dark-2: #6D5D4B;
 
-$col-one: #034f84;
-$col-two: #92a8d1;
-$col-three: #f7cac9;
-$col-four: #f7786b;
-
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
-
-$color-grey-dark-1: #54483A;
-$color-grey-dark-2: #6D5D4B;
-
-
+// $col-sky-dark: #00103a;
+// $col-sky-light: #3e5f77;
 
 // FONT VARIABLES
-$font-primary: 'Nunito',
-sans-serif;
-$font-display: 'Josefin Sans',
-sans-serif;
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+// FONT
+$default-font-size: 1.6rem;
+
+
+
+$col-light-one:#BCCBDE;
+$col-light-two:#C2DDE6;
+$col-light-three:#E6E9F0;
+
+$col-dark-one:#431C5D;
+$col-dark-two:#E05915;
+$col-dark-three:#CDD422;
+
+
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px

@@ -1,20 +1,71 @@
-// .btn {
-//   &,
-//   &:link,
-//   &:visited {
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     padding: 1.5rem 4rem;
-//     display: inline-block;
-//     border-radius: 10rem;
-//     transition: all .2s;
-//     position: relative;
-//     font-size: $default-font-size;
+.btn {
 
-//     //Change for the <button> element
-//     border: none;
-//     cursor: pointer;
-//   }
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: $default-font-size;
+    cursor: pointer;
+  }
+
+  &--contact{
+    color: $col-dark-two;
+    border: 1px solid $col-dark-two;
+
+
+    &:before {
+      border: 1px solid $col-dark-two;
+      content: '';
+    border-radius: 10rem;
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:$col-dark-two;
+      transition: 1s;
+      transform: rotateX(90deg);
+      z-index: -1;
+    }
+
+    &:after {
+      border: 1px solid $col-dark-two;
+    border-radius: 10rem;
+    content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:$col-dark-two;
+      transition: 1s;
+      transform: rotateY(90deg);
+      z-index: -1;
+    }
+
+    &:hover:before {
+      transform: rotateX(0);
+    }
+
+    &:hover:after {
+      transform: rotateY(0);
+    }
+
+    &:hover {
+      color: $col-light-one;
+        border: 1px solid transparent;
+    }
+  }
+
+}
+
 
 //   &:hover {
 //     transform: translateY(-3px);
