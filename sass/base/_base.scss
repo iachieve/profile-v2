@@ -31,24 +31,23 @@ body {
   grid-row: 1;
   grid-column: center-start / center-end;
   background-image: linear-gradient(to right, red, red 14.3%, orange 14.3%, orange 28.6%, yellow 28.6%, yellow 42.9%, green 42.9%, green 57.2%, blue 57.2%, blue 71.5%, indigo 71.5%, indigo 85.8%, violet 85.8%, violet);
-
 }
 
-.body-right {
-  grid-column: body-right-start / body-right-end;
-  grid-row: 1 / -1;
-  background-image:
-    linear-gradient(45deg, $col-dark-three, $col-dark-three 14.3%, $col-dark-two 14.3%, $col-dark-two 28.6%, $col-dark-one 28.6%, $col-dark-one 42.9%, $col-dark-three 42.9%, $col-dark-three 57.2%);
-  opacity: .1;
-}
+// .body-right {
+//   grid-column: body-right-start / body-right-end;
+//   grid-row: 1 / -1;
+//   background-image:
+//     linear-gradient(45deg, $col-dark-three, $col-dark-three 14.3%, $col-dark-two 14.3%, $col-dark-two 28.6%, $col-dark-one 28.6%, $col-dark-one 42.9%, $col-dark-three 42.9%, $col-dark-three 57.2%);
+//   opacity: .1;
+// }
 
-.body-left {
-  grid-column: body-left-start / body-left-end;
-  grid-row: 1 / -1;
-  background-image:
-    linear-gradient(45deg, $col-dark-three, $col-dark-three 14.3%, $col-dark-two 14.3%, $col-dark-two 28.6%, $col-dark-one 28.6%, $col-dark-one 42.9%, $col-dark-three 42.9%, $col-dark-three 57.2%);
-  opacity: .1;
-}
+// .body-left {
+//   grid-column: body-left-start / body-left-end;
+//   grid-row: 1 / -1;
+//   background-image:
+//     linear-gradient(45deg, $col-dark-three, $col-dark-three 14.3%, $col-dark-two 14.3%, $col-dark-two 28.6%, $col-dark-one 28.6%, $col-dark-one 42.9%, $col-dark-three 42.9%, $col-dark-three 57.2%);
+//   opacity: .1;
+// }
 
 .container {
   display: grid;

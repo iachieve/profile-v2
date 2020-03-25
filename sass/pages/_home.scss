@@ -9,7 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
   z-index: 20;
 
   &__img {
@@ -138,14 +139,15 @@
   position: relative;
   background-color: $col-light-three;
   color: $col-dark-one;
-  height: 90vh;
+  // height: 10vh;
   margin-top: -16vh;
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: column;
   z-index: 19;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
 
   @media only screen and (min-width:$bp-medium) {
     height: 70vh;
@@ -157,6 +159,7 @@
 
   &__title {
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   & p {
@@ -174,7 +177,9 @@
   background-color: $col-light-one;
   color: $col-dark-one;
   height: 100vh;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+
   z-index: 18;
 
   &__content {
@@ -185,9 +190,10 @@
     font-size: 2.3rem;
   }
 
-  & p{
+  & p {
     font-size: 1.5rem;
   }
+
   // create line
   & ul li {
     position: relative;
@@ -274,42 +280,179 @@
 
 // end of timeline
 
-
 .projects {
   grid-column: center-start / center-end;
-
   margin-top: -22vh;
   background-color: $col-light-three;
-  height: 100vh;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 140vh;
+  color: $col-dark-one;
+  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+
   z-index: 17;
 
   &__content {
-    margin-top: 25vh;
+    margin: 25vh 5vw 0 5vw;
+  }
+
+  .project_container {
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 2;
+    border-bottom: 2px dotted;
+
+    padding: 1rem;
+    border-radius: 5px;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    & img {
+      width: 50%;
+      height: 100%;
+    }
+
+    & div {
+      padding-left: 4rem;
+      width: 50%;
+    }
+
+    & h2 {
+      display: inline;
+    }
+
+    & h2::before {
+      content: '';
+      display: block;
+    }
+
+    & p {
+      padding-left: 2rem;
+    }
+
+    .btn--project {
+      padding: 0 1rem;
+      border-bottom: 1px solid;
+      text-decoration: none;
+      transition: all .3s;
+    }
+
+    .btn--project:hover {
+      background-color: $col-dark-one;
+      color: $col-light-three;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid;
+    }
+
+    // .project-btn{
+    //   border: 1px solid;
+    //   padding: 1rem 2rem;
+    //   border-radius: 5rem;
+    //   cursor: pointer;
+    // }
+    // .project-btn:hover{
+    //   border: 1px solid;
+    //   padding: 1rem 2rem;
+    //   border-radius: 5rem;
+    //   cursor: pointer;
+    // }
   }
 }
 
 .contact {
   grid-column: center-start / center-end;
 
-  margin-top: -16vh;
-  background-color: $col-dark-three;
-  height: 100vh;
+  margin-top: -30vh;
+  background-color: $col-light-one;
+  height: 120vh;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   z-index: 16;
 
   &__content {
-    margin-top: 20vh;
+    margin-top: 30vh;
   }
 }
 
 .footer {
   background-color: $col-dark-one;
-  height: 40vh;
-  z-index: 15;
-  margin-top: -16vh;
+  grid-column: center-start / center-end;
+  height: 20vh;
+  margin-top: -20vh;
+  z-index: 17;
 
   &__content {
     margin-top: 20vh;
+  }
+
+  svg {
+    margin-top: -10vh;
+    fill: $col-dark-one;
+  }
+}
+
+
+.social-media-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: -15vh;
+}
+
+.icon {
+  width: 9rem;
+  height: 9rem;
+  background: $col-light-three;
+  margin: 1rem;
+  border-radius: 30%;
+  color: $col-dark-one;
+  box-shadow: 0 5px 15px -5px $col-dark-one;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon i {
+  line-height: 9rem;
+  font-size: 2.5rem;
+  transition: 0.2s;
+}
+
+.icon:hover i {
+  transform: scale(1.3);
+  color: $col-light-three;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  background: $col-dark-one;
+  left: -110%;
+  top: 90%;
+  transform: rotate(45deg);
+}
+
+.icon:hover::before {
+  animation: animation 0.7s 1 forwards;
+}
+
+@keyframes animation {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+
+  50% {
+    left: 15%;
+    top: -30%;
+  }
+
+  100% {
+    top: -10%;
+    left: -10%;
   }
 }
