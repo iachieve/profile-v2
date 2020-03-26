@@ -46,8 +46,9 @@
     </div>
   </header>
   <section class="background">
+    <div class="background__bg"></div>
     <div class="background__content">
-      <h1 class="background__title">My career background</h1>
+      <h1 class="section-header">About Me</h1>
       <p data-aos="fade-down-right">I have a Bachelor's degree in
         Accounting with over six years of experience as a Software Engineer. In the early
         stages of my career in the accounting field, I worked on ERP systems and used excel sheets extensively. At the
@@ -78,6 +79,7 @@
 
   <section class="timeline">
     <div class="timeline__content">
+      <h1 class="section-header">Career & Technologies</h1>
       <ul>
         <li>
           <div>
@@ -109,6 +111,12 @@
             <p>
               VB6, VB.NET, SQL, Microsoft Office
             </p>
+
+            </p>
+
+
+
+
           </div>
         </li>
       </ul>
@@ -120,6 +128,8 @@
 
   <section class="projects">
     <div class="projects__content">
+      <h1 class="section-header">Projects</h1>
+
       <div class="project_container">
         <img src="css/img/work/catchy_preview-min.png" alt="">
         <div>
@@ -198,6 +208,27 @@
           <i class="fas fa-chevron-right"></i>
           Provided two pure CSS styles (dark-light) with load-on-scroll feature to enhance the user experience.
         </p>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum optio quasi saepe aperiam iste quod, expedita
+          voluptates vero error repudiandae! Minima ipsum laudantium ducimus laborum harum consequuntur delectus
+          repudiandae
+          illum.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum optio quasi saepe aperiam iste quod, expedita
+          voluptates vero error repudiandae! Minima ipsum laudantium ducimus laborum harum consequuntur delectus
+          repudiandae
+          illum.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum optio quasi saepe aperiam iste quod, expedita
+          voluptates vero error repudiandae! Minima ipsum laudantium ducimus laborum harum consequuntur delectus
+          repudiandae
+          illum.
+        </p>
+
+
       </div>
     </div>
     </div>
@@ -205,33 +236,35 @@
 
   <section class="contact">
     <div class="contact__content">
+
+      <h1 class="section-header">Contact Me</h1>
+
       <form action="#" class="form">
-        <div class="u-margin-bottom-medium">
-          <h2 class="heading-secondary">
-            Contact me
-          </h2>
-        </div>
-        <div class="form__group">
-          <input type="text" class="form__input" placeholder="Full name" id="name" required>
-          <label for="name" class="form__label">Full name</label>
+        <div class="form__bg"></div>
+        <div class="form__controls-container">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Full name" id="name" required>
+            <label for="name" class="form__label">Full name</label>
+          </div>
+
+          <div class="form__group">
+            <input type="email" class="form__input" placeholder="Email address" id="email" required>
+            <label for="email" class="form__label">Email address</label>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Phone Number" id="phone" required>
+            <label for="phone" class="form__label">Phone Number</label>
+          </div>
+
+          <div class="form__group">
+            <textarea class="form__input" id="message" rows="10" required></textarea>
+          </div>
+
+          <div class="form__group">
+            <button class="btn btn--send-email">Send Email</button>
+          </div>
         </div>
 
-        <div class="form__group">
-          <input type="email" class="form__input" placeholder="Email address" id="email" required>
-          <label for="email" class="form__label">Email address</label>
-        </div>
-        <div class="form__group">
-          <input type="text" class="form__input" placeholder="Phone Number" id="phone" required>
-          <label for="phone" class="form__label">Phone Number</label>
-        </div>
-
-        <div class="form__group">
-          <textarea class="form__input" id="message" rows="10" required></textarea>
-        </div>
-
-        <div class="form__group">
-          <button class="btn btn--send-email">Send Email</button>
-        </div>
     </div>
 
     </form>
@@ -239,10 +272,8 @@
   </section>
   <footer class="footer">
 
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px" y="0px" viewBox="0 0 1440 126" 
-      style="enable-background:new 0 0 1440 126;" xml:space="preserve">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" viewBox="0 0 1440 126" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
       <style type="text/css">
         .st0 {
           fill: blue;
@@ -250,32 +281,30 @@
       </style>
       <title>Rectangle 3</title>
       <desc>Created with Sketch.</desc>
-      <path 
-    
-      d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z" />
+      <path d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z" />
     </svg>
 
     <div class="footer__content">
-          <div class="social-media-container">
-            <a class="icon" href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a class="icon" href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a class="icon" href="#">
-              <i class="fas fa-phone-square"></i>
-            </a>
-            <a class="icon" href="#">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a class="icon" href="#">
-              <i class="fas fa-envelope-open-text"></i>
-            </a>
-            <a class="icon" href="#">
-              <i class="fas fa-blog"></i>
-            </a>
-          </div>
+      <div class="social-media-container">
+        <a class="icon" href="#">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="icon" href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="icon" href="#">
+          <i class="fas fa-phone-square"></i>
+        </a>
+        <a class="icon" href="#">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="icon" href="#">
+          <i class="fas fa-envelope-open-text"></i>
+        </a>
+        <a class="icon" href="#">
+          <i class="fas fa-blog"></i>
+        </a>
+      </div>
     </div>
   </footer>
 
