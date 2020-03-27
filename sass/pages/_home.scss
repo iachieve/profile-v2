@@ -191,11 +191,9 @@
   & h3 {
     font-size: 2.3rem;
   }
-
-  & p {
+  & p{
     font-size: 1.5rem;
   }
-
   // create line
   & ul li {
     position: relative;
@@ -301,7 +299,7 @@
 
   .project_container {
     height: auto;
-    margin: 1rem;
+    margin: 3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,6 +308,7 @@
     line-height: 2;
     border-bottom: 2px dotted;
     padding: 1rem;
+    padding-bottom: 3rem;
     border-radius: 5px;
 
     & img {
@@ -332,7 +331,8 @@
     }
 
     & p {
-      padding-left: 2rem;
+      padding: 1rem 0 1rem 2rem;
+      
     }
 
     .btn--project {

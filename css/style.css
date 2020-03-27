@@ -72,6 +72,9 @@
 ul {
   list-style: none; }
 
+p {
+  line-height: 3rem; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -184,6 +187,14 @@ h2 {
     color: #BCCBDE;
     border: 1px solid transparent; }
 
+.btn--send {
+  color: #431C5D;
+  border: 1px solid #431C5D;
+  opacity: 1; }
+  .btn--send:hover {
+    color: #BCCBDE;
+    background-color: #431C5D; }
+
 .form {
   position: relative;
   opacity: .5;
@@ -202,7 +213,7 @@ h2 {
     right: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.91) 0%, rgba(255, 255, 255, 0.91) 60%, transparent 60%), url("img/contact-me.jpeg");
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.96) 60%, transparent 60%), url("img/contact-me.jpeg");
     background-size: 100%;
     background-position: center center; }
   .form__controls-container {
@@ -439,7 +450,7 @@ h2 {
     padding: 5rem; }
   .projects .project_container {
     height: auto;
-    margin: 1rem;
+    margin: 3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -448,6 +459,7 @@ h2 {
     line-height: 2;
     border-bottom: 2px dotted;
     padding: 1rem;
+    padding-bottom: 3rem;
     border-radius: 5px; }
     .projects .project_container img {
       width: 60%;
@@ -461,7 +473,7 @@ h2 {
       content: '';
       display: block; }
     .projects .project_container p {
-      padding-left: 2rem; }
+      padding: 1rem 0 1rem 2rem; }
     .projects .project_container .btn--project {
       padding: 0 1rem;
       border-bottom: 1px solid;
