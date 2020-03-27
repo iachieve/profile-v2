@@ -260,7 +260,7 @@ h2 {
     height: 100%;
     z-index: -1;
     display: block;
-    filter: brightness(30%);
+    filter: brightness(10%);
     mask-image: linear-gradient(to right bottom, #E05915, #E05915);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%); }
   .header__name {
@@ -344,11 +344,17 @@ h2 {
   flex-direction: column;
   clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0); }
   .background__content {
-    margin: 15rem 5rem 15rem 5rem;
-    padding: 5rem; }
+    margin: 15rem 5rem 15rem 5rem; }
+  .background .portfolio-image {
+    width: 25rem;
+    height: 25rem;
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    margin-right: 1rem; }
   .background p {
-    font-size: 1.8rem;
-    display: inline-block;
+    font-size: 2rem;
+    line-height: 4rem;
     margin-bottom: 2.4rem; }
 
 .timeline {
@@ -356,6 +362,7 @@ h2 {
   background-color: #BCCBDE;
   color: #431C5D;
   z-index: 18;
+  margin-top: -2rem;
   clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0); }
   .timeline__content {
     margin: 15rem 5rem 15rem 5rem;
@@ -428,7 +435,7 @@ h2 {
   clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
   margin: -10vh 0 0 0; }
   .projects__content {
-    margin: 15rem 5rem 15rem 5rem;
+    margin: 15rem 5rem 20rem 5rem;
     padding: 5rem; }
   .projects .project_container {
     height: auto;
@@ -468,7 +475,7 @@ h2 {
 
 .contact {
   grid-column: center-start / center-end;
-  margin-top: -30vh;
+  margin-top: -25vh;
   margin-bottom: 5vh;
   color: #431C5D;
   background-color: #BCCBDE; }
@@ -481,7 +488,13 @@ h2 {
   grid-column: center-start / center-end;
   margin-top: -10vh; }
   .footer__content {
-    height: 50vh; }
+    height: 15rem; }
+    @media only screen and (max-width: 75em) {
+      .footer__content {
+        height: 70rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .footer__content {
+        height: 35rem; } }
   .footer svg {
     margin-top: -10vh;
     fill: #431C5D;
