@@ -4,11 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Software Engineer / web developer works with Ruby, Rails, Node, React, JavaScript, GraphQL" />
+
   <title>🙃 Mohamed | Software Engineer</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:700,300,300i" rel="stylesheet">
+  <meta name="keywords" content="software engineer developer hire" />
+  <meta name="author" content="mohamed abdelhalim iachieve" />
+  <meta name="robots" content="index" />
+
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="css/img/favicon.ico" />
+  <link rel="shortcut icon" href="css/img/favicon.ico" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156432247-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156432247-1');
+  </script>
+
+
 </head>
 
 <body class="container">
@@ -51,28 +73,30 @@
     <div class="background__content">
       <h1 class="section-header">About Me</h1>
       <img class="portfolio-image" src="css/img/sec-1-2.jpg" alt="">
-        <p>I have a Bachelor's degree in
-          Accounting with over six years of experience as a Software Engineer. In the early
-          stages of my career in the accounting field, I worked on ERP systems and used excel sheets extensively.
-          <br/>
-          At the time, the business required complex, customized features and reports that 
-          were not available. I <span class="strong"> took the initiative</span> and was <span class="strong">self-taught</span>
-          on how to program in <span class="strong">C sharp and SQL</span> to solve and streamline processes.
-          <br/>
-          Ever
-          since writing my first programming code to manipulate the output data, I have been committed to the idea of
-          using software to solve practical everyday problems
-        <br/>
-          <span class="strong">I'm a software engineer who can prioritize, triage, and manage all of the various
-            milestones of the multiple
-            projects on my plate at any given time.</span>
-        <br/>
-          Software engineering is a never-ending puzzle that I am <span class="strong">passionately</span> engaged in
-          solving. I
-          believe in the
-          power of programming to transform, improve, and streamline the process in the lives of people around the
-          world.
-        </p>
+
+      <p>I have a Bachelor's degree in
+        Accounting with over six years of experience as a Software Engineer. In the early
+        stages of my career in the accounting field, I worked on ERP systems and used excel sheets extensively.
+        <br />
+        At the time, the business required complex, customized features and reports that
+        were not available. I <span class="strong"> took the initiative</span> and was <span
+          class="strong">self-taught</span>
+        on how to program in <span class="strong">C sharp and SQL</span> to solve and streamline processes.
+        <br />
+        Ever
+        since writing my first programming code to manipulate the output data, I have been committed to the idea of
+        using software to solve practical everyday problems
+        <br />
+        <span class="strong">I'm a software engineer who can prioritize, triage, and manage all of the various
+          milestones of the multiple
+          projects on my plate at any given time.</span>
+        <br />
+        Software engineering is a never-ending puzzle that I am <span class="strong">passionately</span> engaged in
+        solving. I
+        believe in the
+        power of programming to transform, improve, and streamline the process in the lives of people around the
+        world.
+      </p>
 
 
     </div>
@@ -263,6 +287,9 @@
             <textarea class="form__input" id="message" rows="10" required></textarea>
           </div>
 
+          <div id="captcha"></div>
+          <input class="form__input" type="text" placeholder="Enter the number above" id="cpatchaTextBox" required />
+
           <div class="form__group">
             <button class="btn btn--send-email">Send Email</button>
           </div>
@@ -289,20 +316,24 @@
 
     <div class="footer__content">
       <div class="social-media-container">
-        <a class="icon" href="#">
+        <a class="icon" href="https://github.com/iachieve" target="_blank">
           <i class="fab fa-github"></i>
         </a>
-        <a class="icon" href="#">
+        <a class="icon" href="https://www.linkedin.com/in/iachieve/" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a class="icon" href="#">
+        <a class="icon" href="tel:+1425-933-3765">
           <i class="fas fa-phone-square"></i>
         </a>
-        <a class="icon" href="#">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a class="icon" href="#">
+        <a class="icon"
+          href="mailto:mhalim80@hotmail.com, iachieve80@gmail.com?subject=I came across from your portfolio website&body=Hi Mohamed, I came across from your portfolio website, "
+          target="_blank">
           <i class="fas fa-envelope-open-text"></i>
+        </a>
+        <a class="icon"
+          href="https://docs.google.com/document/d/1ORhA0QpK1coPhDkPXU4j_E0xzzyRjKLy2gH25mQwV2g/export?format=pdf"
+          download>
+          <i class="far fa-file-pdf"></i>
         </a>
         <a class="icon" href="#">
           <i class="fas fa-blog"></i>
@@ -317,6 +348,8 @@
   <script>
     AOS.init();
   </script>
+  <script src="scripts/captcha.js"></script>
+
 </body>
 
 </html>

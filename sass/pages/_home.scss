@@ -154,7 +154,7 @@
   clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
 
   &__content {
-    margin: 15rem 5rem 15rem 5rem;
+    margin: 25rem 5rem 15rem 5rem;
   }
 
   .portfolio-image {
@@ -163,20 +163,11 @@
     float: left;
     border-radius: 50%;
     shape-outside: circle(50%);
-    // opacity: .8;
-    // filter: grayscale(90%);
-      // shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      // clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-
-      // shape-outside: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     margin-right: 1rem;
-    // transform: scale(2);
- 
   }
 
   & p {
     font-size: 2rem;
-    // display: inline-block;
     line-height: 4rem;
     margin-bottom: 2.4rem;
   }
@@ -193,7 +184,7 @@
   clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
 
   &__content {
-    margin: 15rem 5rem 15rem 5rem;
+    margin: 25rem 5rem 15rem 5rem;
     padding: 10rem;
   }
 
