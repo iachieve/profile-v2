@@ -275,7 +275,8 @@ h2 {
     mask-image: linear-gradient(to right bottom, #E05915, #E05915);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%); }
   .header__name {
-    animation: text-heartbeat 1.4s linear infinite; }
+    animation: text-heartbeat 1.4s linear infinite;
+    animation-iteration-count: 3; }
   .header__welcome {
     display: flex;
     align-items: center;
@@ -335,7 +336,8 @@ h2 {
   .header__software-engineer {
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .header__software-engineer > div:first-of-type {
       padding: 0; } }
 
@@ -343,7 +345,8 @@ h2 {
   .header__software-engineer {
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .header__software-engineer > div:first-of-type {
       padding: 0; } }
 
@@ -351,7 +354,8 @@ h2 {
   .header__software-engineer {
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .header__software-engineer > div:first-of-type {
       padding: 0; } }
 
