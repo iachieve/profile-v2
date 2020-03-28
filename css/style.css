@@ -289,12 +289,12 @@ h2 {
     width: 72rem;
     justify-content: space-between; }
     @media only screen and (max-width: 62.5em) {
-      .header__software-engineer {
+      .header__software-engineer__software-engineer {
         flex-direction: column;
         width: 40rem;
         align-items: center; } }
     @media only screen and (max-width: 37.5em) {
-      .header__software-engineer {
+      .header__software-engineer__software-engineer {
         flex-direction: column;
         width: 40rem;
         align-items: center; } }
