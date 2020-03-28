@@ -33,6 +33,7 @@ body {
   height: .7rem;
   grid-row: 1;
   grid-column: center-start / center-end;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(14.3%, red), color-stop(14.3%, orange), color-stop(28.6%, orange), color-stop(28.6%, yellow), color-stop(42.9%, yellow), color-stop(42.9%, green), color-stop(57.2%, green), color-stop(57.2%, blue), color-stop(71.5%, blue), color-stop(71.5%, indigo), color-stop(85.8%, indigo), color-stop(85.8%, violet), to(violet));
   background-image: linear-gradient(to right, red, red 14.3%, orange 14.3%, orange 28.6%, yellow 28.6%, yellow 42.9%, green 42.9%, green 57.2%, blue 57.2%, blue 71.5%, indigo 71.5%, indigo 85.8%, violet 85.8%, violet);
 }
 
@@ -56,6 +57,7 @@ background-size: cover;
 
 .container {
   display: grid;
+  grid-template-rows: repeat(9, -webkit-max-content);
   grid-template-rows: repeat(9, max-content);
   grid-template-columns: [body-right-start] 3vw [ body-right-end center-start] 1fr [center-end body-left-start] 3vw [body-left-end];
 }

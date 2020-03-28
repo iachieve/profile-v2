@@ -7,9 +7,12 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   position: relative;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   z-index: 20;
   margin: 0 0 -10vw 0;
 
@@ -21,21 +24,33 @@
     height: 100%;
     z-index: -1;
     display: block;
-    filter: brightness(10%);
-    mask-image: linear-gradient(to right bottom, $col-dark-two, $col-dark-two);
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    -webkit-filter: brightness(10%);
+            filter: brightness(10%);
+    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from($col-dark-two), to($col-dark-two));
+    -webkit-mask-image: linear-gradient(to right bottom, $col-dark-two, $col-dark-two);
+            mask-image: -webkit-gradient(linear, left top, right bottom, from($col-dark-two), to($col-dark-two));
+            mask-image: linear-gradient(to right bottom, $col-dark-two, $col-dark-two);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
   }
 
   &__name {
-    animation: text-heartbeat 1.4s linear infinite;
-    animation-iteration-count: 3;
+    -webkit-animation: text-heartbeat 1.4s linear infinite;
+            animation: text-heartbeat 1.4s linear infinite;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
   }
 
   &__welcome {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 
   &__secondary {
@@ -43,6 +58,7 @@
   }
 
   &__software-engineer {
+    display: -webkit-box;
     display: flex;
 
     & > div {
@@ -57,67 +73,83 @@
       font-weight: 700;
       display: inline-block;
       text-transform: capitalize;
-      animation: lighting 1.4s linear infinite;
+      -webkit-animation: lighting 1.4s linear infinite;
+              animation: lighting 1.4s linear infinite;
     }
 
     & > div span:nth-child(1) {
-      animation-delay: 0;
+      -webkit-animation-delay: 0;
+              animation-delay: 0;
     }
 
     & > div span:nth-child(2) {
-      animation-delay: 0.1s;
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s;
     }
 
     & > div span:nth-child(3) {
-      animation-delay: 0.2s;
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s;
     }
 
     & > div span:nth-child(4) {
-      animation-delay: 0.3s;
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s;
     }
 
     & > div span:nth-child(5) {
-      animation-delay: 0.4s;
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s;
     }
 
     & > div span:nth-child(6) {
-      animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s;
     }
 
     & > div span:nth-child(7) {
-      animation-delay: 0.6s;
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s;
     }
 
     & > div span:nth-child(8) {
-      animation-delay: 0.7s;
+      -webkit-animation-delay: 0.7s;
+              animation-delay: 0.7s;
     }
 
     & > div span:nth-child(9) {
-      animation-delay: 0.8s;
+      -webkit-animation-delay: 0.8s;
+              animation-delay: 0.8s;
     }
 
     & > div span:nth-child(10) {
-      animation-delay: 0.9s;
+      -webkit-animation-delay: 0.9s;
+              animation-delay: 0.9s;
     }
 
     & > div span:nth-child(11) {
-      animation-delay: 1s;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
     }
 
     & > div span:nth-child(12) {
-      animation-delay: 1.1s;
+      -webkit-animation-delay: 1.1s;
+              animation-delay: 1.1s;
     }
 
     & > div span:nth-child(13) {
-      animation-delay: 1.2s;
+      -webkit-animation-delay: 1.2s;
+              animation-delay: 1.2s;
     }
 
     & > div span:nth-child(14) {
-      animation-delay: 1.3s;
+      -webkit-animation-delay: 1.3s;
+              animation-delay: 1.3s;
     }
 
     & > div span:nth-child(15) {
-      animation-delay: 1.4s;
+      -webkit-animation-delay: 1.4s;
+              animation-delay: 1.4s;
     }
   }
 }
@@ -129,10 +161,15 @@
 
 @media only screen and (max-width: $bp-large) {
   .header__software-engineer {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
 
     & > div:first-of-type {
       padding: 0;
@@ -142,10 +179,15 @@
 
 @media only screen and (max-width: $bp-medium) {
   .header__software-engineer {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
 
     & > div:first-of-type {
       padding: 0;
@@ -155,10 +197,15 @@
 
 @media only screen and (max-width: $bp-small) {
   .header__software-engineer {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
     & > div:first-of-type {
       padding: 0;
     }
@@ -172,11 +219,17 @@
   position: relative;
   background-color: $col-light-three;
   color: $col-dark-one;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: column;
-  clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
 
   &__content {
     margin: 25rem 5rem 15rem 5rem;
@@ -206,7 +259,8 @@
   color: $col-dark-one;
   z-index: 18;
   margin-top: -2rem;
-  clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
 
   &__content {
     margin: 25rem 5rem 15rem 5rem;
@@ -237,7 +291,9 @@
     height: 2.5rem;
     background-color: $col-dark-one;
     border-radius: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: background 0.5 ease-in-out;
     transition: background 0.5 ease-in-out;
   }
 
@@ -247,6 +303,7 @@
     width: 40rem;
     padding: 1rem;
     background-color: $col-light-three;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
 
@@ -313,7 +370,8 @@
   color: $col-dark-one;
 
   // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 49% 94%, 0 100%, 0 0);
   margin: -10vh 0 0 0;
 
   &__content {
@@ -324,10 +382,15 @@
   .project_container {
     height: auto;
     margin: 3rem 0;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     font-size: 1.5rem;
     line-height: 2;
     border-bottom: 2px dotted;
@@ -362,6 +425,7 @@
       padding: 0 1rem;
       border-bottom: 1px solid;
       text-decoration: none;
+      -webkit-transition: all 0.3s;
       transition: all 0.3s;
     }
 
@@ -413,9 +477,12 @@
 
 .social-media-container {
   text-align: center;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .icon {
@@ -433,11 +500,13 @@
 .icon i {
   line-height: 9rem;
   font-size: 2.5rem;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 .icon:hover i {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   color: $col-light-three;
 }
 
@@ -449,9 +518,11 @@
   background: $col-dark-one;
   left: -110%;
   top: 90%;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .icon:hover::before {
-  animation: social-media-animation 0.7s 1 forwards;
+  -webkit-animation: social-media-animation 0.7s 1 forwards;
+          animation: social-media-animation 0.7s 1 forwards;
 }

@@ -51,6 +51,7 @@
     border-bottom: 3px solid transparent;
     width: 100%;
     display: block;
+    -webkit-transition: all .3s;
     transition: all .3s;
 
     &:focus {
@@ -76,13 +77,15 @@
     margin-left: 2rem;
     margin-top: .7rem;
     display: block;
+    -webkit-transition: all .3s;
     transition: all .3s;
   }
 
   &__input:placeholder-shown+&__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4rem);
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
   }
 
 }
