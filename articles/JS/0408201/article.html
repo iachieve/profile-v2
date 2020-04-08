@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/common/css/typgraphy.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/shadows.css">
+  <link rel="stylesheet" href="/common/css/blog.css">
+  <link rel="stylesheet" href="/common/css/prism.css">
+  <link rel="stylesheet" href="/common/css/blockquote.css">
+  <link rel="stylesheet" href="/common/css/table.css">
+</head>
+
+<body>
+  <div class="blog">
+    <main class="column-shadow">
+      <div class="blog-container">
+        <h1>What is the difference between Slice and Splice in JavaScript?</h1>
+
+        <div class="blog-section">
+          <h3>What Array.splice method does and how can we use it?</h3>
+          <blockquote>
+            <ul>
+              <li> The splice() method changes the contents of an array by
+                <em>removing</em> or <em>replacing</em> existing elements and/or
+                <em>adding</em> new elements in place.</li>
+              <li>Splice method returns the removed items.</li>
+              <li>Splice method changes the original array.</li>
+            </ul>
+          </blockquote>
+          <p>
+            Array.splice( index, remove_count, item_list )
+            The splice method takes three parameters:
+            index: what position to add/remove items.
+            howMany/deleteCount: the number of items to be removed. If set to 0, no items will be removed.
+            item1...itemX: The items to be added(just added) to the entry.
+          </p>
+          <p>
+
+          </p>
+          <pre class="language-js" data-src="./code/ex1.js"><code></code></pre>
+          <pre class="language-js" data-src="./code/ex2.js"><code></code></pre>
+        </div>
+
+
+        <div class="blog-section">
+          <h3>Let's see Array.slice now, then compare both methods </h3>
+
+          <blockquote>
+            <ul>
+              <li>The slice() method returns the selected elements in an array, as a new array object.</li>
+              <li>The slice() method selects the elements starting at the given start argument, and ends at, but does
+                not include, the given end argument.</li>
+              <li>slice does not alter the original array. It returns a shallow copy of elements from the original
+                array.</li>
+            </ul>
+          </blockquote>
+          <p>
+
+          </p>
+          <pre class="language-js" data-src="./code/ex3.js"><code></code></pre>
+          <pre class="language-js" data-src="./code/ex2.js"><code></code></pre>
+        </div>
+
+
+        <div class="blog-section">
+          <h3>Difference between Slice and Splice in JavaScript </h3>
+
+          <div class="out-table">
+
+            <div class="table">
+              <div class="row header">
+                <div class="cell">
+                  Array.slice
+                </div>
+                <div class="cell">
+                  Array.splice
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell" data-title="slice">
+                  Copies elements from an array
+                </div>
+
+                <div class="cell" data-title="Occupation">
+                  Used for adding/removing elements from array
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="cell" data-title="slice">
+                  Returns them as a new array
+                </div>
+
+                <div class="cell" data-title="Occupation">
+                  Returns an array of removed elements
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="cell" data-title="slice">
+                  Doesn’t change the original array
+                </div>
+
+                <div class="cell" data-title="Occupation">
+                  Changes/Mutates the array
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="cell" data-title="slice">
+                  Starts slicing from … until given index: array.slice (from, until)
+                  <br/>
+                  Slice doesn’t include “until” index parameter
+                </div>
+
+                <div class="cell" data-title="Occupation">
+                  For adding elements: array.splice (index, number of elements, element)
+                  <br/>
+                  For removing elements: array.splice (index, number of elements)
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="cell" data-title="slice">
+                  Can be used both for arrays and strings
+                </div>
+
+                <div class="cell" data-title="Occupation">
+                  Can only be used for arrays
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+    </main>
+    <aside class="column-shadow">
+      <h3>Latest Posts</h3>
+      <ul id="sidebar">
+      </ul>
+    </aside>
+    <footer class="column-shadow">
+      <a href="https://iachieve.dev/" target="_blank">About the author</a>
+    </footer>
+  </div>
+  <script src="/common/js/main.js"></script>
+  <script src="/common/js/prism.js"></script>
+</body>
+
+</html>
