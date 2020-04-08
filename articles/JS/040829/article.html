@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/common/css/typgraphy.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/shadows.css">
+  <link rel="stylesheet" href="/common/css/blog.css">
+  <link rel="stylesheet" href="/common/css/prism.css">
+</head>
+
+<body>
+  <div class="blog">
+    <main class="column-shadow">
+      <div class="blog-container">
+        <h1>Double Equals vs. Triple Equals in JavaScript</h1>
+        <div class="blog-section">
+          <h3>What is the difference between == and === in JavaScript?</h3>
+          <h3>Why this in the first place in JavaScript?</h3>
+          <h5>
+            let first talk briefly about the Type Coercion in JavaScript
+          </h5>
+          <p>
+            Type coercion is the process of converting value from one type to another
+            (such as string to number, object to boolean, and so on).
+            Any type, be it primitive or an object, is a valid subject for type coercion.
+          </p>
+          <p>
+
+          </p>
+          <pre class="language-js" data-src="./code/type-coercion.js"><code></code></pre>
+        </div>
+
+        <div class="blog-section">
+
+          <h3>How can we compare String "3" and Number 3 in JavaScript</h3>
+          <h3>Why do we need === triple equals in JavaScript?</h3>
+          <p>
+            Because JavaScript engine will do type conversion and will return true.
+          </p>
+        </div>
+        <div class="blog-section">
+          <h3>What is the difference between == and === in JavaScript?</h3>
+          <p>
+            When using triple equals === in JavaScript, we are testing for strict equality.
+            This means both the type
+            and the value we are comparing have to be the same.
+          </p>
+          <p>
+            When using double equals in JavaScript we are testing for loose equality.
+            Double equals also performs type coercion.
+          </p>
+          <pre class="language-js" data-src="./code/type-coercion.js"><code></code></pre>
+        </div>
+    </main>
+    <aside class="column-shadow">
+      <h3>Latest Posts</h3>
+      <ul id="sidebar">
+      </ul>
+    </aside>
+    <footer class="column-shadow">
+      <a href="https://iachieve.dev/" target="_blank">About the author</a>
+    </footer>
+  </div>
+  <script src="/common/js/main.js"></script>
+  <script src="/common/js/prism.js"></script>
+</body>
+
+</html>

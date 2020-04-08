@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/common/css/typgraphy.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/shadows.css">
+  <link rel="stylesheet" href="/common/css/blog.css">
+  <link rel="stylesheet" href="/common/css/prism.css">
+</head>
+
+<body>
+  <div class="blog">
+    <main class="column-shadow">
+      <div class="blog-container">
+        <h1>JavaScript Arrays Q and A</h1>
+        <div class="blog-section">
+          <h3>
+            Given an array of integers, find the pair of adjacent elements
+            that has the largest product and return that
+            product.
+          </h3>
+          Example
+
+          For inputArray = [3, 6, -2, -5, 7, 3], the output should be
+          adjacentElementsProduct(inputArray) = 21.
+
+          7 and 3 produce the largest product.
+
+
+        </div>
+
+        <div class="blog-section">
+          <h3>Solution 1: Using Two Pointer Technique</h3>
+          <p>
+            In this problem we need adjacent elements in the array [3, 6, -2, -5, 7, 3]
+            In other word, we need to compare the multiplication result from each adjacent pair
+            pairs in this example are [3, 6], [6, 2] , [-2, -5], [-5, 7], [7, 3]
+            and results respectively are 18, 12, 10, -35, 21
+            and the right solution obviously in the last pair [7, 3];
+
+          </p>
+          <p>
+            we can solve this problem without using extra memory, but we have to 
+            iterate through the given array once at least
+          </p>
+          <pre class="language-js" data-src="./code/adjacentElementsProduct.js"><code></code></pre>
+        </div>
+
+    </main>
+    <aside class="column-shadow">
+      <h3>Latest Posts</h3>
+      <ul id="sidebar">
+      </ul>
+    </aside>
+    <footer class="column-shadow">
+      <a href="https://iachieve.dev/" target="_blank">About the author</a>
+    </footer>
+  </div>
+  <script src="/common/js/main.js"></script>
+  <script src="/common/js/prism.js"></script>
+</body>
+
+</html>
