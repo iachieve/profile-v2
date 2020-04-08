@@ -1,27 +1,18 @@
 function almostIncreasingSequence(seq) {
-
-  function isSequence(sequence) {
-    for (let j = 0; j < sequence.length - 1; j++) {
-      if (sequence[j] >= sequence[j + 1]) {
+  let count = 0;
+  for (let i = 0; i < seq.length; i++) {
+    if (seq[i] <= seq[i - 1]) {
+      count++;
+      if (seq[i] <= seq[i - 2] && seq[i + 1] <= seq[i - 1]) {
         return false;
       }
     }
-    return true;
   }
-
-  for (let i = 0; i < sequence.length; i++) {
-    var sliceCopy = sequence.slice(0);
-
-    sliceCopy.splice(i, 1);
-    if (isSequence(sliceCopy)) {
-      return true;
-    }
-  }
-  return false;
-
+  return count <= 1;
 }
-// let sequence = [1, 3, 2];
-// console.log(almostIncreasingSequence(sequence));
 
-sequence = [1, 3, 2, 1]; // false
-console.log(almostIncreasingSequence(sequence));
+let seq = [1, 3, 2]; // true
+console.log(almostIncreasingSequence(seq));
+
+seq = [1, 3, 2, 1]; // false
+console.log(almostIncreasingSequence(seq));
