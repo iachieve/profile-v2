@@ -17,3 +17,7 @@
 .nav-menu a {
   text-decoration: none;
 }
+
+.active {
+  background-color: yellow;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/common/css/typgraphy.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/shadows.css">
+  <link rel="stylesheet" href="/common/css/blog.css">
+  <link rel="stylesheet" href="/common/css/blockquote.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/prism.css">
+  <link rel="stylesheet" href="/common/css/sidenav.css">
+
+</head>
+
+<body>
+  <div class="blog">
+    <main class="column-shadow">
+      <div class="blog-container">
+        <h1>What is Currying in JavaScript?</h1>
+
+        <div class="blog-section">
+          <p>
+            In simple English: Currying is when a function doesn't take all of it's
+            arguments upfront.<br />
+            Instead, it wants you to give it the first argument, and then the function returns
+            another function.<br />
+            Which you are supposed to call with the second argument.<br />
+            Which in turn will return a new function.<br />
+            Which you are supposed to call with the third argument.<br />
+            Until the the last function in the chain, and then the last function in the chain
+            will return the value that you really want.
+          </p>
+          <h3>Currying example in JavaScript </h3>
+          <pre class="language-js" data-src="./code/ex1.js"><code></code></pre>
+          <p>Same code in es6 syntax</p>
+          <pre class="language-js" data-src="./code/ex2.js"><code></code></pre>
+        </div>
+        <div class="blog-section">
+          <h3>What is the difference between Curring and Partial application?</h3>
+          <p>Partial application </p>
+          Partial function doesn't expect all the parameters to passed on.
+          <pre class="language-js" data-src="./code/ex3.js"><code></code></pre>
+        </div>
+    </main>
+
+    <aside class="column-shadow">
+      <h3>Latest Posts</h3>
+      <ul id="sidebar">
+      </ul>
+    </aside>
+    <footer class="column-shadow">
+      <a href="https://iachieve.dev/" target="_blank">About the author</a>
+    </footer>
+  </div>
+  <script src="/common/js/main.js"></script>
+  <script src="/common/js/prism.js"></script>
+</body>
+
+</html>
