@@ -10,37 +10,41 @@
   <link rel="stylesheet" href="/common/css/shadows.css">
   <link rel="stylesheet" href="/common/css/blog.css">
   <link rel="stylesheet" href="/common/css/prism.css">
+      <link rel="stylesheet" href="/common/css/sidenav.css">
+
 </head>
 
 <body>
   <div class="blog">
     <main class="column-shadow">
       <div class="blog-container">
-        <h1>make Array Consecutive 2</h1>
+        <h1>JavaScript Arrays Q and A</h1>
         <div class="blog-section">
           <h3>
-            make Array Consecutive 2
+          Given the string, check if it is a palindrome.
           </h3>
-          Ratiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an
-          non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest to
-          largest so that each statue will be bigger than the previous one exactly by 1. He may need some additional
-          statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.
+          Example
 
-Example
+          For inputString = "aabaa", the output should be
+          checkPalindrome(inputString) = true;
+          For inputString = "abac", the output should be
+          checkPalindrome(inputString) = false;
+          For inputString = "a", the output should be
+          checkPalindrome(inputString) = true.
 
-For statues = [6, 2, 3, 8], the output should be
-makeArrayConsecutive2(statues) = 3.
 
-Ratiorg needs statues of sizes 4, 5 and 7.
         </div>
 
         <div class="blog-section">
-          <h3>Brute Force Solution</h3>
-          <pre class="language-js" data-src="./code/makeArrayConsecutive2-brute-force.js"><code></code></pre>
-        </div>
-        <div class="blog-section">
-          <h3>One Line Solution</h3>
-          <pre class="language-js" data-src="./code/makeArrayConsecutive2-one-line.js"><code></code></pre>
+          <h3>Solution 1: Using Two Pointer Technique</h3>
+          <p>
+          set pointer to the left index, and right pointer to the right index
+          as long as the two indexes values are equal you can increase
+          the left pointer/index value and decrease the right pointer/index value
+          this is an optimal solution because you don't iterate over the whole string
+          and you don't store any data in memory
+          </p>
+          <pre class="language-js" data-src="./code/two-pointers.js"><code></code></pre>
         </div>
 
     </main>

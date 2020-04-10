@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/common/css/typgraphy.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/shadows.css">
+  <link rel="stylesheet" href="/common/css/blog.css">
+  <link rel="stylesheet" href="/common/css/blockquote.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/prism.css">
+  <link rel="stylesheet" href="/common/css/sidenav.css">
+
+</head>
+
+<body>
+  <div class="blog">
+    <main class="column-shadow">
+      <div class="blog-container">
+        <h1>What is Pure Function in JavaScript?</h1>
+
+        <div class="blog-section">
+          <p>
+            Function is pure with two conditions:
+            <ul>
+              <li>No Side Effects.</li>
+              <li>Same input => Same Return</li>
+            </ul>
+          </p>
+          <h3>Side Effects ?!</h3>
+          This function has side effects, it mutates the array outside itself.
+          <pre class="language-js" data-src="./code/side-effects.js"><code></code></pre>
+          we can change the previous method easily and make pure as follows:
+          <pre class="language-js" data-src="./code/side-effects-2.js"><code></code></pre>
+          <h3>Returns the Same output every time takes in the same input</h3>
+          <p>The following function returns the same input every time,
+            and doesn't affect the outer scope, so it is a pure function</p>
+          <pre class="language-js" data-src="./code/side-effects-3.js"><code></code></pre>
+        </div>
+
+        <div class="blog-section">
+          <h3>Pure functions advantages</h3>
+          <ul>
+            <li>Easy to test</li>
+            <li>Easy to compose</li>
+            <li>Avoid a lot of bugs</li>
+          </ul>
+        </div>
+
+        <div class="blog-section">
+          <h3>Can we write all program functions pure</h3>
+          <p>I would say that is impossible. Imagine that the simplest JavaScript functions have side-effects
+            such as <mark>Math.random</mark> and <mark>console.log</mark>.
+          </p>
+        </div>
+        <div class="blog-section">
+          <h3>How to write a good JavaScript function</h3>
+          <p>
+            JavaScript function is good as long as it achieves some of the following:
+          </p>
+          <ul>
+            <li>Responsible for one task only.</li>
+            <li>Predictable: same return for same input.</li>
+            <li>Composable</li>
+            <li>Immutable State</li>
+            <li>Has a return statement</li>
+            <li>Pure: if possible</li>
+            <li>No shared state</li>
+          </ul>
+        </div>
+
+
+    </main>
+
+    <aside class="column-shadow">
+      <h3>Latest Posts</h3>
+      <ul id="sidebar">
+      </ul>
+    </aside>
+    <footer class="column-shadow">
+      <a href="https://iachieve.dev/" target="_blank">About the author</a>
+    </footer>
+  </div>
+  <script src="/common/js/main.js"></script>
+  <script src="/common/js/prism.js"></script>
+</body>
+
+</html>

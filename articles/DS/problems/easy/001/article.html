@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="/common/css/shadows.css">
   <link rel="stylesheet" href="/common/css/blog.css">
   <link rel="stylesheet" href="/common/css/prism.css">
+      <link rel="stylesheet" href="/common/css/sidenav.css">
+
 </head>
 
 <body>
@@ -18,26 +20,39 @@
       <div class="blog-container">
         <h1>JavaScript Arrays Q and A</h1>
         <div class="blog-section">
-          <h3>In how many ways can you create/initialize an array in JavaScript?
-            And what are the differences between them?
+          <h3>
+            Given a year, return the century it is in. The first century spans from the year 1 up to and including the
+            year 100, the second - from the year 101 up to and including the year 200, etc.
           </h3>
-          <p>
-            The Array Constructor
-          </p>
-          <pre class="language-js" data-src="./code/create-array-constructor.js"><code></code></pre>
-          <pre class="language-js" data-src="./code/create-array-square.js"><code></code></pre>
+          Example
+
+          For year = 1905, the output should be
+          centuryFromYear(year) = 20;
+          For year = 1700, the output should be
+          centuryFromYear(year) = 17.
+
         </div>
+
         <div class="blog-section">
-          <h3>Are arrays object in JavaScript?</h3>
+          <h3>Solution 1: Century from a year</h3>
           <p>
-            short answer yes
+            Math.ceil
+            The Math.ceil function always rounds a number up to the next largest
+            whole integer
           </p>
-          <pre class="language-js" data-src="./code/arrays-are-objects.js"><code></code></pre>
+          <pre class="language-js" data-src="./code/math-ceil.js"><code></code></pre>
         </div>
+
         <div class="blog-section">
-          <h3>Explain some differences between Array and Object in JavaScript?</h3>
-          <pre class="language-js" data-src="./code/diff-array-object.js"><code></code></pre>
+          <h3>Solution 2: Century from a year</h3>
+          <p>
+            Math.floor
+            The Math.floor() function returns the largest
+            integer less than or equal to a given number.
+          </p>
+          <pre class="language-js" data-src="./code/math-floor.js"><code></code></pre>
         </div>
+
     </main>
     <aside class="column-shadow">
       <h3>Latest Posts</h3>

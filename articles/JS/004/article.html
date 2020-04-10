@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/common/css/typgraphy.css">
+  <link rel="stylesheet" href="/common/css/style.css">
+  <link rel="stylesheet" href="/common/css/shadows.css">
+  <link rel="stylesheet" href="/common/css/blog.css">
+  <link rel="stylesheet" href="/common/css/blockquote.css">
+  <link rel="stylesheet" href="/common/css/style.css"> 
+  <link rel="stylesheet" href="/common/css/prism.css">
+    <link rel="stylesheet" href="/common/css/sidenav.css">
+
+</head>
+
+<body>
+  <div class="blog">
+    <main class="column-shadow">
+      <div class="blog-container">
+        <h1>What is Closure in JavaScript?</h1>
+        <div class="blog-section">
+          <p>If Closure didn't change the way you think and how you write code,
+            so you don't know closure yet</p>
+          <h3>Here's the MDN definition</h3>
+          <blockquote>
+            A closure is the combination of a function bundled together (enclosed) with references to its surrounding
+            state (the lexical environment). In other words, a closure gives you access to an outer function’s scope
+            from an inner function. In JavaScript, closures are created every time a function is created, at function
+            creation time.
+          </blockquote>
+          <h3>Closure simple example</h3>
+          <pre class="language-js" data-src="./code/closure_1.js"><code></code></pre>
+        </div>
+
+        <div class="blog-section">
+          <h3>Another Closure simple example</h3>
+          <pre class="language-js" data-src="./code/closure_2.js"><code></code></pre>
+        </div>
+
+        <div class="blog-section">
+          <h3>How to benefit from Closure in JavaScript --Memory</h3>
+          <pre class="language-js" data-src="./code/closure_3.js"><code></code></pre>
+          <h5>In the code above the array is being created every time we invoke the function,
+            let's rewrite the above code taking advantage of closure</h5>
+          <pre class="language-js" data-src="./code/closure_4.js"><code></code></pre>
+
+        </div>
+
+        <div class="blog-section">
+          <h3>How to benefit from Closure in JavaScript --Encapsulation</h3>
+          <pre class="language-js" data-src="./code/closure_5.js"><code></code></pre>
+          <h5>In the code above the array is being created every time we invoke the function,
+            let's rewrite the above code taking advantage of closure</h5>
+          <pre class="language-js" data-src="./code/closure_6.js"><code></code></pre>
+        </div>
+    </main>
+
+    <aside class="column-shadow">
+      <h3>Latest Posts</h3>
+      <ul id="sidebar">
+      </ul>
+    </aside>
+    <footer class="column-shadow">
+      <a href="https://iachieve.dev/" target="_blank">About the author</a>
+    </footer>
+  </div>
+  <script src="/common/js/main.js"></script>
+  <script src="/common/js/prism.js"></script>
+</body>
+
+</html>
