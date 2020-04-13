@@ -3,3 +3,4 @@ async function load_home() {
     await (await fetch('/components/menu_links.html')).text();
 }
 load_home();
+
